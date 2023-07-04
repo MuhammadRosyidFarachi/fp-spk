@@ -11,45 +11,162 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>FP SPK</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <div class="div row-cols-3">
-    <form>
-      <!-- Mulai Data 1 -->
-      <div class="mb-3">
-        <label for="Data1" class="form-label">Data 1</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-        <div id="emailHelp" class="form-text">Masukan data 1 yang anda punya</div>
-      </div>
-      <!-- Akhir Data 1 -->
+    <h1 class="h1 text-center mb-4 mt-4">Final Project SPK</h1>
+    <div class="container d-flex">
+      <form action="#" class="form col-4">
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <h2>Aspek Kedisiplinan</h2>
+            <!-- Mulai Data 1 -->
+            <label>Input Nilai Ketepatan Waktu</label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata1" id="data1"/>
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 1 -->
 
-      <!-- Mulai data 2 -->
-      <div class="mb-3">
-        <label for="Data2" class="form-label">Data 2</label>
-        <input type="Data2" class="form-control" id="Data2" />
-        <div id="emailHelp" class="form-text">Masukan data 2 yang anda punya</div>
-      </div>
-      <!-- Akhir Data 2 -->
+        <!-- Mulai Data 2 -->
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <label>Input Nilai Kehadiran</label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata2" id="data2" />
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 2 -->
 
-      <!-- Mulai Data 3 -->
-      <div class="mb-3">
-        <label for="Data2" class="form-label">Data 3</label>
-        <input type="Data3" class="form-control" id="Data3" />
-        <div id="emailHelp" class="form-text">Masukan data 3 yang anda punya</div>
-      </div>
-      <!-- Akhir Data 3 -->
+        <!-- Mulai Data 3 -->
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <label>Input Nilai Jam Lembur</label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata3" id="data3" />
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 3 -->
 
-      <!-- Mulai Data 4 -->
-      <div class="mb-3">
-        <label for="Data4" class="form-label">Data 4</label>
-        <input type="Data4" class="form-control" id="Data4" />
-        <div id="emailHelp" class="form-text">Masukan data 4 yang anda punya</div>
-      </div>
-      <!-- Akhir Data 4 -->
+        <!-- Mulai Data 4 -->
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <label>Input Nilai Penyelesaian Tugas</label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata3" id="data4" />
+            <br />
+            
+        <!-- Awal Mulai -->
+        <button onclick="cekhasil()" type="submit" class="btn btn-primary mt-3" id="btn_hitung_k col-2 mb-2 ">Mulai Hitung</button>
+        <!-- Akhir Mulai -->
+          </div>
+        </div>
+        <!-- Akhir Data 4 -->
+      </form>
+      <form action="#" class="form col-4 mb-2">
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <h2>Aspek Kinerja</h2>
+            <!-- Mulai Data 1 -->
+            <label>Input Data1   </label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata1" id="data1" />
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 1 -->
+
+        <!-- Mulai Data 2 -->
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <label>Masukkan data 2: </label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata2" id="data2" />
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 2 -->
+
+        <!-- Mulai Data 3 -->
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <label>Masukkan data 3: </label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata3" id="data3" />
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 3 -->
+
+        <!-- Mulai Data 4 -->
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <label>Masukkan data 4: </label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata3" id="data4" />
+            <br />
+            
+        <!-- Awal Mulai -->
+        <button onclick="cekhasil()" type="submit" class="btn btn-primary mt-3" id="btn_hitung col-2 mb-2 ">Mulai Hitung</button>
+        <!-- Akhir Mulai -->
+          </div>
+        </div>
+        <!-- Akhir Data 4 -->
+      </form>
+      <form action="#" class="form col-4">
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <h2>Aspek Periode Kerja</h2>
+            <!-- Mulai Data 1 -->
+            <label>Input Data1   </label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata1" id="data1" />
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 1 -->
+
+        <!-- Mulai Data 2 -->
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <label>Masukkan data 2: </label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata2" id="data2" />
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 2 -->
+
+        <!-- Mulai Data 3 -->
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <label>Masukkan data 3: </label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata3" id="data3" />
+            <br />
+          </div>
+        </div>
+        <!-- Akhir Data 3 -->
+
+        <!-- Mulai Data 4 -->
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <label>Masukkan data 4: </label>
+            <br />
+            <input type="number" min="1" max="5" name="inputdata3" id="data4" />
+            <br />
+            
+        <!-- Awal Mulai -->
+        <button onclick="cekhasil()" type="submit" class="btn btn-primary mt-3" id="btn_hitung col-2 mb-2 ">Mulai Hitung</button>
+        <!-- Akhir Mulai -->
+          </div>
+        </div>
+        <!-- Akhir Data 4 -->
+
+      </form>
+     
+      </form>
     </div>
-      <!-- Awal Mulai -->
-      <button type="submit" class="btn btn-primary mt-3" id="Mulai">Mulai</button>
-      <!-- Akhir Mulai -->
-    </form>
+    <script type="text/javascript" src="Perhitungan.js"></script>
   </body>
 </html>
