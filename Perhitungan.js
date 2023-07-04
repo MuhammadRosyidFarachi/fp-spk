@@ -1,3 +1,3 @@
 function cekhasil() {
-  alert('muncul jika javascript berfungsi');
+  alert('Ini akan muncul jika javascript berfungsi');
 }
